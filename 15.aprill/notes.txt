@@ -1,0 +1,28 @@
+INitializing ei ole sama mis declaring
+
+Initializing tahab väärtust.
+
+METHODS
+
+meetodinimi ymarsulud
+
+``
+ static void greet(String name) {
+        System.out.println(name);
+    }
+``
+
+Mis juhtub kui mitte anda meetodile väärtust?
+Jätta lihtsalt getSum(2.0, 4.6)
+Kas eraldatakse mälu sellele v mitte?
+M'lu eraldatakse ajutiselt, hoitakse return väärtust mälus. (CPU memory stackis)
+KOhe kui meetod lõppeb, mälu on discarded.
+
+
+w3schools.com/java
+taltech õppematerjalid
+codingbat.com/java
+
+Mitteprimitiivsed tyybid
+kasutada v]rdlust == vaid .equals()
+
