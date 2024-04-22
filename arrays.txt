@@ -1,0 +1,15 @@
+Arrays
+Massiiv - kogum yhte tyypi andmetega
+
+*fikseeritud suurus
+*reference tyypi muutuja(hoiab m'lu aadressi)
+
+
+Array loomine
+
+int[] numbers = new int[10];
+
+String[] fruits = { "apple", "banana", "pear"};
+
+arrayl on pikkus
+igal elemendil on oma index
