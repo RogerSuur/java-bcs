@@ -1,4 +1,95 @@
-firstline in main
-changes in second
-texttext3
-kakaka
+Java
+11.Aprill
+Data types
+Variables
+Operators
+Methods
+
+How does Java work?
+SOurce code by javac -> compiled bytecode(code is analyzed byt compiler, turned into bytecode) by java -> java virtual machine (code is run in java machine) by OS
+
+Java syntax
+.code must me inside a class
+.filename and class name must be the same
+.convention is that the class name starts with capital letter and is CamelCase
+.case-sensitive - MyClass and myclass have different meaning
+.code blocks inside curly braces (brackets) {}
+.each code statement ends with semicolon;
+
+ Intellij
+ IDE - Integrated Development Environment
+ 
+ 
+ Ex Hello world
+ 
+ JAVA kaust nimetatakse package-ks
+ package naming-convention = väikeste tähtedega
+ 
+ public - kogu projekti raames nähtav
+ 
+ kompileerimine:
+ terminalis liigu sinna package-sse, javac HelloWorld.java
+ 
+ boilerplate - kood, mis on nagu setup.
+ main + tab = public static void main
+ sout + tab = system.out.println
+ 
+ KOODi indentation ehk joondus väga tähtis!
+Koodi jooksutamine terminalis, õiges packages - 
+java HelloWorld.java
+
+MIDA MITTE PANNA GIT+i?
+idea file-id
+out kaust
+
+
+Data types
+Primitive types
+
+NOn-primitive
+aka reference types
+Strings, Array, class, interfaces, enum
+
+Difference:
+1)primitive type salvestab mällu väärtuse, reference salvestab koha mälus.
+
+2)PRimitive types default value 0 - for numeric types, false - for boolean
+Reference types default value null
+
+3) Primitive types - operators(-,= jne)
+REference types - methods ("hello".equals("hello"),
+
+4) Primitive types - passed by value
+reference types - passed by reference
+
+5) Primitive - lowercase
+reference - uppercase (with exception of class)
+
+Variable
+
+* container for storing data values
+* decalring a variable: 
+	type variableName = value;
+	
+int weight = 17; (if ever want to use double, should also be defined as double, because later redefining an int to double, the program slows down because of it.)
+String name = "Peter";
+double distance = 5.67; // can add d, but by default is double
+char selection = 'a';
+float length = 9.3643f; //f or F must be added
+boolean isAvailable = false;
+
+Widening Casting - convering a smaller type into a larger type size:
+int myInt = 4;
+double myDOuble = myInt = 4.0
+
+Narrowing Casting - converting a larger type into a smaller type size:
+double myDOuble = 4.68d; // outputs 4.68
+int myInt = (int) myDouble; //outputs 9
+
+Overflow = siis kui ta läheb sellest väärtusest yle, hakkab otsast peale ja yle kirjutama.
+
+Integer.MAX_VALUE
+
+
+
+
