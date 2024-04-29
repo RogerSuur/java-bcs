@@ -30,20 +30,12 @@ public class warmup2 {
     }
     
     static String frontTimes(String str, int n) {
-        String answer = "";
-        int length = str.length() > 3 ? 3 : str.length();
-        for (int i = 0; i < length ; i++) {
-             answer += str.charAt(i);
-        }
-        n--;
-        System.out.println("answer" + n); 
-        if (n >= 0) {
-            frontTimes(answer, n);
+        String firstLetters = str.length() >= 3 ? str.substring(0, 3) : str;
+        if (n > 0) {
+            return firstLetters + frontTimes(firstLetters, n-2);
         } else {
-            return answer;
+            return firstLetters;
         }
-        return answer;
-        
     }
     
 }
